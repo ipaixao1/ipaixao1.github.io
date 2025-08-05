@@ -1,86 +1,185 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Isabel Paixão | Portfólio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="blckpurple.png" type="image/x-icon">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Isabel Paixão | Desenvolvedora Front-End</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-2wTz+UY04s+dJ+8bUjtwzmEV0b2EVJ/abnxKU4O01Pfz82Ig0QnEb5d96n8zwOYxG2SK5jaGr8S0q5YZtz4iQA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="favicon.png" type="image/png">
 </head>
+
 <body>
-  <nav>
-    <ul class="menu">
-      <li><a href="#sobre">Sobre</a></li>
-      <li><a href="#projetos">Projetos</a></li>
-      <li><a href="#habilidades">Habilidades</a></li>
-      <li><a href="#contato">Contato</a></li>
-      <li><a href="https://www.canva.com/design/DAGsD3tTcUk/s0Hj_YUXsolARDGxJTUpVA/view?utm_content=DAGsD3tTcUk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2765a46556" download class="button"><i class="fas fa-file-download"></i> Currículo</a></li>
-    </ul>
-  </nav>
-
-  <header>
-    <h1>Isabel Paixão</h1>
-    <p>Desenvolvedora Web em formação | Foco em Front-end</p>
-  </header>
-
-  <section id="sobre" class="bloco-roxo">
-    <h2>✨ Sobre Mim</h2>
-    <p>Sou estudante de Análise e Desenvolvimento de Sistemas com formação técnica em Informática para Internet. Apaixonada por tecnologia, encontrei no desenvolvimento web — especialmente no front-end — uma forma de transformar ideias em soluções úteis e criativas.
-
-        Tenho experiência com projetos acadêmicos, como o e-commerce Brisa Vinícola, onde atuei como gestora e desenvolvedora, cuidando tanto do back-end quanto do layout da área administrativa.
-        
-        Busco uma oportunidade para crescer profissionalmente, aprimorar minhas habilidades e colaborar em equipes que valorizam organização, inovação e aprendizado contínuo.
-        
-        </p>
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container d-flex flex-column flex-lg-row align-items-center justify-content-between py-5">
+      <div class="hero-text text-white mb-4 mb-lg-0">
+        <p class="intro-text">OLÁ, EU SOU 👋</p>
+        <h1 class="display-3 fw-bold">Isabel Paixão</h1>
+        <h4 class="mb-3">Desenvolvedora Front-end | UX/UI</h4>
+        <p class="lead">Transformo ideias em experiências digitais modernas, acessíveis e impactantes. Vamos criar algo incrível juntos?</p>
+        <div class="mt-4 d-flex flex-wrap gap-3">
+          <a href="https://wa.me/5511979907856"download class="btn btn-outline-light px-4 py-2">Fale Comigo</a>
+          <a href="https://www.canva.com/design/DAGsD3tTcUk/s0Hj_YUXsolARDGxJTUpVA/view?utm_content=DAGsD3tTcUk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2765a46556" download class="btn btn-outline-light px-4 py-2">
+            <i class="fas fa-download"></i> Meu Currículo
+          </a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="isabel.jpeg" alt="Isabel Paixão" class="img-fluid rounded-image" />
+      </div>
+    </div>
   </section>
 
-  <section id="projetos" class="bloco-preto">
-    <div class="projeto">
-      <h2>🎨 Projetos</h2>
-      <div class="projeto-conteudo">
-        <video controls>
-          <source src="brisav.mp4" type="video/mp4">
-          Seu navegador não suporta o vídeo.
-        </video>
-        <div class="projeto-descricao">
-          <h3>Brisa Vinícola</h3>
-          <p>E-commerce desenvolvido como TCC com foco em PHP, HTML, CSS e gestão de equipe. Atuei como gestora do projeto e desenvolvedora back-end, além de criar o layout da área administrativa e a identidade visual do sistema.</p>
+  <!-- Habilidades Section -->
+  <section class="skills-section py-5">
+    <div class="container text-white">
+      <div class="row align-items-start">
+        <div class="col-lg-6">
+          <h2 class="section-title">Minhas Habilidades</h2>
+        </div>
+        <div class="col-lg-6">
+          <p>Desenvolvo soluções digitais intuitivas a partir de ideias complexas, com foco técnico e atenção à jornada do usuário.</p>
+        </div>
+      </div>
+      <div class="row mt-4 g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="card skill-card">
+            <div class="card-body">
+              <i class="fas fa-desktop icon"></i>
+              <h5 class="card-title">Desenvolvimento Frontend</h5>
+              <p class="card-text">Criação de interfaces responsivas com Bootstrap, HTML, CSS e JavaScript.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card skill-card">
+            <div class="card-body">
+              <i class="fas fa-server icon"></i>
+              <h5 class="card-title">Desenvolvimento Backend</h5>
+              <p class="card-text">Criação de APIs com PHP, Python e Java.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card skill-card">
+            <div class="card-body">
+              <i class="fas fa-pencil-ruler icon"></i>
+              <h5 class="card-title">Design UI/UX</h5>
+              <p class="card-text">Prototipação e criação de experiências intuitivas com Figma.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card skill-card">
+            <div class="card-body">
+              <i class="fab fa-git-alt icon"></i>
+              <h5 class="card-title">Controle de Versão</h5>
+              <p class="card-text">Uso de Git e GitHub para versionamento e colaboração eficiente.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="habilidades" class="bloco-preto">
-    <h2>💻 Habilidades</h2>
-    <div class="habilidade-item"><i class="fab fa-html5"></i><span>HTML5</span></div>
-    <div class="habilidade-item"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
-    <div class="habilidade-item"><i class="fab fa-js-square"></i><span>JavaScript</span></div>
-    <div class="habilidade-item"><i class="fab fa-php"></i><span>PHP</span></div>
-    <div class="habilidade-item"><i class="fas fa-database"></i><span>MySQL</span></div>
-    <div class="habilidade-item"><i class="fas fa-code"></i><span>Visual Studio Code</span></div>
+  <!-- Projetos Section -->
+  <section class="projects-section py-5">
+    <div class="container">
+      <h2 class="text-white mb-4">Projetos em Destaque</h2>
+      <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="project-card text-white">
+              <h5>Brisa Vinícola</h5>
+              <p>E-commerce de vinhos.</p>
+              <video autoplay muted loop playsinline width="100%">
+                <source src="brisav.mp4" type="video/mp4">
+               Seu navegador não suporta o vídeo.
+                   </video>
+
+              <div class="mt-2">
+                <span class="badge bg-secondary">PHP</span>
+                <span class="badge bg-secondary">HTML</span>
+                <span class="badge bg-secondary">CSS</span>
+                <span class="badge bg-secondary">Bootstrap</span>
+                <span class="badge bg-secondary">MySQL</span>
+                <span class="badge bg-secondary">JavaScript</span>
+
+              </div>
+              <a href="https://github.com/ipaixao1/TCC---BrisaVinicola" class="btn-github">
+              <i class="bi bi-github me-2"></i> Ver no GitHub
+               </a>
+
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="project-card text-white">
+              <h5>Garnet</h5>
+              <p>|E-commerce de Joias. Em andamento</p>
+              <img src="logo.png" class="img-fluid" alt="Register Students API">
+              <div class="mt-2">
+                <span class="badge bg-secondary">JavaScript</span>
+                <span class="badge bg-secondary">HTML</span>
+                <span class="badge bg-secondary">CSS</span>
+                <span class="badge bg-secondary">MySQL</span>
+              </div>
+              <a href="#" class="btn-github">
+              <i class="bi bi-github me-2"></i> Ver no GitHub
+               </a>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+      
+    </div>
   </section>
 
-  <section id="contato" class="bloco-roxo"  style="text-align: left;">
-    <h2>📢 Contato</h2>
-    <p><strong><i class="fas fa-envelope"></i> Email:</strong> sisabelvirginia@gmail.com</p>
-    <p><strong><i class="fab fa-whatsapp"></i> WhatsApp:</strong> <a href="https://wa.me/5511979907856" target="_blank">+55 11 97990-7856</a></p>
-    <p>
-      <a href="https://www.linkedin.com/in/isabel-virg%C3%ADnia-santos-da-paix%C3%A3o-2abb45231/" target="_blank">
-        <i class="fab fa-linkedin"></i> LinkedIn
-      </a>
-      |
-      <a href="https://github.com/ipaixao1" target="_blank">
-        <i class="fab fa-github"></i> GitHub
-      </a>
+  <!-- Contato Section -->
+<section id="contato" class="contato-section py-5 text-white text-center">
+  <div class="container">
+    <h2 class="fw-bold mb-3">Vamos conversar?</h2>
+    <p class="mb-4">
+      Pronto para transformar sua ideia em realidade? Me envie uma mensagem direta no WhatsApp.
+      Será um prazer discutir seu projeto e como posso ajudar a construir algo incrível.
     </p>
-  </section>
+    <a href="https://wa.me/5511979907856" target="_blank" class="btn btn-gradient px-4 py-2">
+      <i class="fab fa-whatsapp me-2"></i> Conversar no WhatsApp
+    </a>
+  </div>
+</section>
 
-  <footer>
-    <p>&copy; 2025 Isabel Paixão</p>
-  </footer>
+<!-- Rodapé -->
+<footer class="footer-section text-white text-center py-4">
+  <div class="container">
+    <div class="mb-3">
+      <a href="https://github.com/ipaixao1" target="_blank" class="text-white me-3">
+        <i class="bi bi-github"></i>
+      </a>
+      <a href="www.linkedin.com/in/isabel-virgínia-santos-da-paixão-2abb45231" target="_blank" class="text-white me-3">
+        <i class="bi bi-linkedin"></i>
+      </a>
+      <a href="sisabelvirginia@gmail.com" class="text-white">
+        <i class="bi bi-envelope-fill"></i>
+      </a>
+    </div>
+    <p class="mb-0 small text-gradient">&copy; 2025 Isabel Paixão. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
